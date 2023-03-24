@@ -1,0 +1,40 @@
+.promo {
+  position: relative;
+  padding-top: 206px;
+  margin-bottom: 120px;
+
+  height: 800px;
+  background: url("../img/main-bg.jpg") top center;
+}
+
+.underheader {
+  margin-bottom: 6px;
+
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.main-title {
+  width: 530px;
+  margin-bottom: 25px;
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.25;
+}
+
+.promo-links {
+  display: flex;
+  align-items: center;
+}
+
+.promo-link {
+  display: block;
+
+  font-weight: 700;
+  color: inherit;
+
+  &:not(:last-child) {
+    margin-right: 44px;
+  }
+}
