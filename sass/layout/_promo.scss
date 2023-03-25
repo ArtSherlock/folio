@@ -1,17 +1,9 @@
 .promo {
   position: relative;
   padding-top: 206px;
-  margin-bottom: 120px;
 
-  height: 800px;
-  background: url("../img/main-bg.jpg") top center;
-}
-
-.underheader {
-  margin-bottom: 6px;
-
-  font-weight: 700;
-  font-size: 16px;
+  height: 100vh;
+  background: url("../img/main-bg.jpg") no-repeat top center/cover;
 }
 
 .main-title {

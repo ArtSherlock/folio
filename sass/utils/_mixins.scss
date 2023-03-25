@@ -1,0 +1,14 @@
+@mixin circle($align) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -26%;
+    left: $align;
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    z-index: -1;
+  }
+}
