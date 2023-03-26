@@ -1,0 +1,50 @@
+.about-me {
+  padding: 120px 0;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 400px 570px;
+  grid-template-rows: minmax(250px, auto) minmax(250px, auto);
+  grid-auto-rows: minmax(250px, auto);
+  gap: 40px 70px;
+}
+
+.about-photo {
+  grid-row: 1 / 3;
+}
+
+.about-text {
+  margin-top: 20px;
+}
+
+// SKILLS LIST
+.about-skills {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 20px 50px;
+}
+
+.about-skill {
+  display: grid;
+  grid-template-columns: 40px 200px;
+  column-gap: 20px;
+}
+
+.about-thumb {
+  position: relative;
+  padding-top: 15px;
+  padding-left: 15px;
+
+  @include circle(0, 0);
+}
+
+.about-skill-title {
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.about-skill-text {
+  font-size: 12px;
+}

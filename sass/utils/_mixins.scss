@@ -1,9 +1,9 @@
-@mixin circle($align) {
+@mixin circle($top, $left) {
   &::before {
     content: "";
     position: absolute;
-    top: -26%;
-    left: $align;
+    top: $top;
+    left: $left;
     width: 36px;
     height: 36px;
 
