@@ -62,6 +62,7 @@ img {
 h1,
 h2,
 h3,
+h4,
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -79,14 +80,19 @@ p {
   background-color: var(--hover-color);
 }
 
-.title {
+.title,
+.title-center {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
 }
 
+.title-center {
+  text-align: center;
+}
+
 .underheader {
-  display: inline-block;
+  display: block;
   margin-top: 6px;
   margin-bottom: 6px;
   font-weight: 700;
@@ -114,11 +120,14 @@ p {
   z-index: -1;
 }
 
+.circle-center {
+  text-align: center;
+}
 .circle-center::before {
   content: "";
   position: absolute;
   top: -26%;
-  left: 40%;
+  left: 48.5%;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -343,7 +352,7 @@ p {
 }
 
 .about-me {
-  padding: 120px 0;
+  padding: 120px 0 60px;
 }
 
 .about-wrapper {
@@ -401,4 +410,96 @@ p {
 
 .about-skill-text {
   font-size: 12px;
+}
+
+.experience {
+  padding: 60px 0;
+}
+
+.experience-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 65px;
+}
+
+.experience-column {
+  width: 420px;
+  padding-left: 45px;
+}
+
+.experience-subheader {
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+}
+.experience-subheader::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -49px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.experience-item {
+  position: relative;
+  padding-top: 45px;
+  font-size: 12px;
+}
+.experience-item::before {
+  content: "";
+  position: absolute;
+  top: 62.5px;
+  left: -42px;
+  width: 42px;
+  height: 1px;
+  background-color: #000;
+}
+.experience-item::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -42px;
+  width: 1px;
+  height: calc(100% + 10px);
+  background-color: #000;
+  z-index: -1;
+}
+
+.experience-item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.experience-item-icon {
+  position: relative;
+  padding-top: 15px;
+  padding-left: 15px;
+  margin-right: 20px;
+}
+.experience-item-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  z-index: -1;
+}
+
+.experience-item-subheader {
+  font-weight: 700;
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */

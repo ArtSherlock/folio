@@ -1,0 +1,83 @@
+.experience {
+  padding: 60px 0;
+}
+
+.experience-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 65px;
+}
+
+.experience-column {
+  width: 420px;
+  padding-left: 45px;
+}
+
+.experience-subheader {
+  position: relative;
+
+  font-weight: 700;
+  font-size: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;  
+    top: 50%;
+    transform: translateY(-50%);
+    left: -49px;
+    width: 15px;
+    height: 15px;
+  
+    background-color: var(--accent-color);
+    border-radius: 50%;
+  }
+}
+
+//  EXPERIENCE LIST
+.experience-item {
+  position: relative;
+  padding-top: 45px;
+  font-size: 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 62.5px;
+    left: -42px;
+    width: 42px;
+    height: 1px;
+
+    background-color: #000;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -42px;
+    width: 1px;
+    height: calc(100% + 10px);
+
+    background-color: #000;
+    z-index: -1;
+  }
+}
+
+.experience-item-header {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.experience-item-icon {
+  position: relative;
+  padding-top: 15px;
+  padding-left: 15px;
+  margin-right: 20px;
+
+  @include circle(0, 0);
+}
+
+.experience-item-subheader {
+  font-weight: 700;
+  font-size: 14px;
+}

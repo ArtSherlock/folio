@@ -1,5 +1,5 @@
 .underheader {
-  display: inline-block;
+  display: block;
   margin-top: 6px;
   margin-bottom: 6px;
 
@@ -19,5 +19,6 @@
 }
 
 .circle-center {
-  @include circle(-26%, 40%);
+  text-align: center;
+  @include circle(-26%, 48.5%);
 }
