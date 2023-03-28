@@ -1,0 +1,68 @@
+.skills {
+  padding: 60px 0;
+}
+
+// TECHNOLOGY LIST
+.technology-list {
+  display: grid;
+  grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
+  grid-auto-rows: minmax(270px, auto);
+  gap: 13px;
+
+  padding: 0 10px;
+  margin-bottom: 120px;
+}
+
+.technology-item {
+  padding: 30px;
+  padding-bottom: 25px;
+  border: 1px solid #000;
+}
+
+.technology-img {
+  margin-bottom: 20px;
+}
+
+.img-little {
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+
+.technology-title {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.technology-descr {
+  font-size: 12px;
+}
+
+// SKILLS LIST
+.skills-list {
+  display: grid;
+  grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+  grid-auto-rows: minmax(70px, auto);
+  gap: 30px 45px;
+}
+
+.skills-item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.skills-scale {
+  height: 14px;
+  width: 100%;
+
+  background-color: #E8E4DE;
+  border-radius: 4px;
+  overflow: hidden;
+
+  &-actual {
+    height: 100%;
+    background-color: var(--accent-color);
+  }
+}

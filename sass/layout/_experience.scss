@@ -3,13 +3,14 @@
 }
 
 .experience-wrapper {
-  display: flex;
+  display: grid;
+  grid-template: minmax(380px, auto) / repeat(2, 425px);
   justify-content: space-between;
   padding: 0 65px;
+
 }
 
 .experience-column {
-  width: 420px;
   padding-left: 45px;
 }
 
