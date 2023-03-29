@@ -10,7 +10,8 @@
 }
 
 .portfolio-item {
-  transition: filter 500ms ease-in-out;
+  transition: filter 500ms ease-in-out;  
+
   &:hover {
     filter: grayscale(0.75);
   }
@@ -24,4 +25,9 @@
     grid-row: 2 /3;
     grid-column: 2 / 4;
   }
+}
+
+.portfolio-img {
+  height: 100%;
+  object-fit: cover;
 }

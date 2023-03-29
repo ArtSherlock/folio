@@ -407,6 +407,7 @@
     </div>
   </section>
 
+<!-- PORTFOLIO -->
   <section class="portfolio">
     <div class="container">
       <h2 class="underheader circle-center">Portfolio</h2>
@@ -415,27 +416,28 @@
 
       <ul class="portfolio-list">
         <li class="portfolio-item">
-          <img src="img/uber.jpg" alt="uber taxi" width="280" height="280">
+          <img class="portfolio-img" src="img/uber.jpg" alt="uber taxi" width="280" height="280">
         </li>
         <li class="portfolio-item">
-          <img src="img/pulse.jpg" alt="pulse moniter landing page" width="280" height="280">
+          <img class="portfolio-img" src="img/pulse.jpg" alt="pulse moniter landing page" width="280" height="280">
         </li>
         <li class="portfolio-item">
-          <img src="img/bread.jpg" alt="bakery" width="280" height="280">
+          <img class="portfolio-img" src="img/bread.jpg" alt="bakery" width="280" height="280">
         </li>
         <li class="portfolio-item">
-          <img src="img/plans.jpg" alt="plans" width="280" height="565">
+          <img class="portfolio-img" src="img/plans.jpg" alt="plans" width="280" height="565">
         </li>
         <li class="portfolio-item">
-          <img src="img/ipad.jpg" alt="ipad" width="280" height="280">
+          <img class="portfolio-img" src="img/ipad.jpg" alt="ipad" width="280" height="280">
         </li>
         <li class="portfolio-item">
-          <img src="img/mac.jpg" alt="macbook" width="565" height="280">
+          <img class="portfolio-img" src="img/mac.jpg" alt="macbook" width="565" height="280">
         </li>
       </ul>
     </div>
   </section>
 
+<!-- PRICELIST -->
   <section class="pricelist">
     <div class="container">
       <h2 class="underheader circle-center">Price list</h2>
@@ -509,19 +511,64 @@
     </div>
   </section>
 
-  <section class="contacs">
+<!-- CONTACTS -->
+  <section class="contacts">
     <div class="container contacts-container">
-      <div class="contacs-photo">
+      <div class="contacts-photo">
         <img src="img/main-photo.jpg" alt="my photo" width="400" height="600">
       </div>
 
-      <div class="contacts-form">
-        <h2 class="underheader circle-left">Price list</h2>
-        <p class="title">What I use in my work</p>
+      <div class="contacts-me">
+        <h2 class="underheader circle-left">Contacts</h2>
+        <p class="title">Get in touch with me</p>
         <div class="divider"></div>
+        <p class="contacts-subtitle">In any way that is convenient for you:</p>
+        <ul class="contacts-social">
+          <li class="contacts-social-item">
+            <a href="#">
+              <img class="rotate-img" src="icons/social/facebook.svg" alt="facebook" width="30">
+            </a>
+          </li>
+          <li class="contacts-social-item">
+            <a href="#">
+              <img src="icons/social/telegram.svg" alt="telegram" width="30">
+            </a>
+          </li>
+          <li class="contacts-social-item">
+            <a href="#">
+              <img src="icons/social/instagram.svg" alt="instagram" width="30">
+            </a>
+          </li>
+        </ul>
+        <p class="contacts-subtitle contacts-myself">Or leave your information and I'll write you myself:</p>
+
+        <form class="contacts-form">
+          <div class="contacts-input">            
+            <input id="name" class="input" type="text" placeholder="John" required>
+            <label class="label" for="name">Your name</label>
+          </div>
+          <div class="contacts-input">            
+            <input id="email" class="input" type="email" required>
+            <label class="label" for="email">Your e-mail</label>
+          </div>
+          <div class="contacts-textarea">            
+            <textarea name="textarea" class="textarea" id="message"></textarea>
+            <label class="label" for="message">Your message</label>
+          </div>
+
+          <div class="button-policy">
+            <button class="btn contacts-btn">Send message</button>
+            <p class="contacts-policy">
+              <input class="checkbox" type="checkbox" name="policy" id="policy-checkbox" required>
+              <label for="policy-checkbox">I agree with&nbsp;</label>
+              <a href="#" class="policy-link">the privacy policy</a>
+            </p>
+          </div>
+        </form>
       </div>
     </div>
   </section>
+  
   <script src="js/script.js"></script>
 </body>
 </html>

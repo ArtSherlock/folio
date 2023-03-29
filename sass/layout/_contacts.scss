@@ -6,4 +6,107 @@
   display: grid;
   grid-template-columns: 400px 1fr;
   column-gap: 70px;
+
+  padding-right: 50px;
+  padding-left: 35px;
+}
+
+.contacts-subtitle {
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.contacts-myself {
+  margin-bottom: 30px;
+}
+
+.contacts-social {
+  display: flex;
+}
+
+.contacts-social-item {
+  &:not(:last-child) {
+    margin-right: 22px;
+  }
+}
+
+.rotate-img {
+  transform: rotate(90deg);
+}
+
+// CONTACTS FORM
+.contacts-form {
+  display: grid;
+  grid-template: 45px 190px 45px / repeat(2, 280px);
+  justify-content: space-between;
+  gap: 30px 25px;
+}
+
+.contacts-input,
+.contacts-textarea {
+  position: relative;
+}
+
+.contacts-textarea {
+  grid-column: 1 / 3;
+}
+
+.contacts-btn {
+  // width: 220px;
+
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  height: 100%;  
+  padding: 0 20px;
+
+  font-size: 12px;
+}
+
+.label {
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  padding: 0 8px;
+
+  background-color: #fff;
+  font-size: 12px;
+}
+
+.textarea {
+  width: 100%;
+  height: 100%;
+  padding: 14px 20px;
+
+  resize: none;
+}
+
+.button-policy {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 35px;
+}
+
+.contacts-policy {  
+  display: flex;
+  align-items: center;
+
+  font-size: 12px;
+}
+
+.policy-link {
+  color: #2306D6;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.checkbox {
+  margin-right: 10px;
 }
