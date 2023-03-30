@@ -1,8 +1,16 @@
 .title,
 .title-center {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 1.67;
+
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: 1140px) {
+    font-size: 36px
+  }
 }
 
 .title-center {

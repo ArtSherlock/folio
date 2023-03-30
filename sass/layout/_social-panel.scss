@@ -1,4 +1,8 @@
 .social-panel {
+  display: none;
+
+  @media screen and (min-width: 1400px) {
+  display: block;
   position: fixed;
   top: 226px;
   left: 50px;
@@ -9,6 +13,8 @@
   align-items: center;
 
   z-index: 10;
+  }
+
 }
 
 .social-item:not(:first-of-type) {

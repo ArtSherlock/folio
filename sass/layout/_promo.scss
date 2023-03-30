@@ -4,15 +4,27 @@
 
   height: 100vh;
   background: url("../img/main-bg.jpg") no-repeat top center/cover;
+
+  @media screen and (max-width: 768px) {
+    background-position: 59%;
+  }
 }
 
 .main-title {
-  width: 530px;
   margin-bottom: 25px;
 
   font-weight: 700;
-  font-size: 48px;
-  line-height: 1.25;
+  font-size: 26px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 1.25;
+  }
+
+  @media screen and (min-width: 1140px) {
+    font-size: 48px;
+  }
+
 }
 
 .promo-links {

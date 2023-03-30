@@ -13,12 +13,17 @@
 
   &-block {
     position: relative;
-    width: 345px;
+    width: 250px;
     height: 100%;
-    padding: 140px 40px 50px;
+    padding: 140px 20px 50px;
 
     background-color: var(--accent-color);
     transition: all 500ms;
+
+    @media screen and (min-width: 768px) {
+      width: 345px;
+      padding: 140px 40px 50px;
+    }
   }
 
   &.active {
@@ -90,9 +95,13 @@
 
 .menu-link {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   text-transform: uppercase;
   color: #fff;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 .menu-social {
