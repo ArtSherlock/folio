@@ -1,12 +1,26 @@
 .portfolio {
-  padding: 60px 0;
+  padding: 20px 0;
+
+  @media screen and (min-width: 1140px) {
+    padding: 60px 0;
+  }
 }
 
 .portfolio-list {
   display: grid;
-  grid-template: repeat(2, 280px) / repeat(4, 280px);
+  grid-template: repeat(6, 280px) / 280px;
   grid-auto-rows: 280px;
-  gap: 5px;
+  justify-content: center;
+  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    grid-template: repeat(3, 280px) / repeat(2, 280px);
+  }
+
+  @media screen and (min-width: 1140px) {
+    grid-template: repeat(2, 280px) / repeat(4, 280px);
+    gap: 5px;
+  }
 }
 
 .portfolio-item {
@@ -17,13 +31,21 @@
   }
 
   &:nth-child(4) {
-    grid-row: 1 / 3;
-    grid-column: 4 / 5;
+
+    @media screen and (min-width: 1140px) {
+      grid-row: 1 / 3;
+      grid-column: 4 / 5;
+    }
+
   }
 
   &:nth-child(6) {
-    grid-row: 2 /3;
-    grid-column: 2 / 4;
+
+    @media screen and (min-width: 1140px) {
+      grid-row: 2 /3;
+      grid-column: 2 / 4;
+    }
+
   }
 }
 

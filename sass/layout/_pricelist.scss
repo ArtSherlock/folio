@@ -1,12 +1,26 @@
 .pricelist {
-  padding-bottom: 60px;
+  padding: 20px 0;
+  
+  @media screen and (min-width: 1140px) {
+    padding: 60px 0;
+  }
 }
 
 .price-wrapper {
   padding: 0 50px;
   display: grid;
-  grid-template-columns: repeat(2, 370px);
-  justify-content: space-between;
+  grid-template-columns: 300px;
+  justify-content: center;
+  row-gap: 15px;
+
+  @media screen and (min-width: 480px) {
+    grid-template-columns: 370px;
+  }
+
+  @media screen and (min-width: 1140px) {
+    grid-template-columns: repeat(2, 370px);
+    justify-content: space-between;
+  }
 }
 
 .price-item {
