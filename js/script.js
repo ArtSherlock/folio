@@ -16,3 +16,9 @@ const percents = document.querySelectorAll('.skills-percents'),
 percents.forEach((item, i) => {
   lines[i].style.width = item.innerHTML;
 });
+
+const order_message = document.querySelector('.contacts-btn');
+order_message.addEventListener('click', () => {
+    gtag('event', 'order_message_send');
+    console.log('Дані відправлено!');
+});
